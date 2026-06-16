@@ -4,7 +4,7 @@ import axios from "axios";
 //    baseURL: "http://localhost:5000/api",
 // });
 const api = axios.create({
-   baseURL: "https://hospital-management-system-frontend-dusky.vercel.app/",
+   baseURL: "https://hospital-management-system-frontend-dusky.vercel.app",
 });
 api.interceptors.request.use((config) => {
    const token = localStorage.getItem("token");
